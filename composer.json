@@ -23,7 +23,7 @@
             "Mohamadtsn\\Charts\\": "src/"
         },
         "files": [
-            "src/tools/helpers.php"
+            "src/tools/helper.php"
         ]
     },
     "extra": {
