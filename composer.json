@@ -23,7 +23,7 @@
             "ConsoleTVs\\Charts\\": "src/"
         },
         "files": [
-            "src/Tools/helpers.php"
+            "tools/helpers.php"
         ]
     },
     "extra": {
