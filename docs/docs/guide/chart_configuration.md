@@ -17,9 +17,7 @@ declare(strict_types = 1);
 
 namespace App\Charts;
 
-use ConsoleTVs\Charts\BaseChart;
-use Illuminate\Http\Request;
-use Chartisan\PHP\Chartisan;
+use Chartisan\PHP\Chartisan;use Illuminate\Http\Request;use Mohamadtsn\Charts\BaseChart;
 
 class SampleChart extends BaseChart
 {

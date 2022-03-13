@@ -19,9 +19,7 @@ declare(strict_types = 1);
 
 namespace App\Charts;
 
-use ConsoleTVs\Charts\BaseChart;
-use Illuminate\Http\Request;
-use Chartisan\PHP\Chartisan;
+use Chartisan\PHP\Chartisan;use Illuminate\Http\Request;use Mohamadtsn\Charts\BaseChart;
 
 class SampleChart extends BaseChart
 {
@@ -63,8 +61,7 @@ You can use the following example as a guide to register an example chart.
 
 namespace App\Providers;
 
-use ConsoleTVs\Charts\Registrar as Charts;
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider;use Mohamadtsn\Charts\Registrar as Charts;
 
 class AppServiceProvider extends ServiceProvider
 {

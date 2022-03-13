@@ -2,11 +2,12 @@
 
 declare(strict_types=1);
 
-namespace ConsoleTVs\Charts;
+namespace Mohamadtsn\Charts;
 
 use Chartisan\PHP\Chartisan;
 use Illuminate\Http\Request;
 use ReflectionClass;
+use ReflectionException;
 
 abstract class BaseChart
 {
@@ -43,6 +44,9 @@ abstract class BaseChart
      */
     abstract public function handler(Request $request): Chartisan;
 
+    /**
+     * @throws ReflectionException
+     */
     public static function __set_state(array $properties)
     {
         $klass = new static();

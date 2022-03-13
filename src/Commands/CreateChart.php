@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ConsoleTVs\Charts\Commands;
+namespace Mohamadtsn\Charts\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 use Illuminate\Support\Str;

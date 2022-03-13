@@ -2,8 +2,9 @@
 
 declare(strict_types=1);
 
-namespace ConsoleTVs\Charts;
+namespace Mohamadtsn\Charts;
 
+use Mohamadtsn\Charts\Registrar;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\Routing\Registrar as RouteRegistrar;
@@ -35,11 +36,7 @@ class ChartsServiceProvider extends ServiceProvider
     {
         // Publish the configuration file to the config path.
         $this->publishes([__DIR__.'/Config/charts.php' => config_path('charts.php')], 'charts');
-        // Create the blade directrives
-        $routeNamePrefix = $config->get('charts.global_route_name_prefix');
-        Blade::directive('chart', function ($expression) use ($routeNamePrefix) {
-            return "<?php echo route('{$routeNamePrefix}.'.{$expression}); ?>";
-        });
+
         // Register the console commands.
         if ($this->app->runningInConsole()) {
             $this->commands([Commands\CreateChart::class]);
