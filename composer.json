@@ -1,8 +1,9 @@
 {
-    "name": "consoletvs/charts",
+    "name": "mohamadtsn/laravel-chart",
     "description": "The missing charting library on laravel, powered by Chartisan",
     "license": "MIT",
     "type": "library",
+    "homepage": "https://github.com/mohamadtsn/laravel-chart.git",
     "require": {
         "php": ">=7.4",
         "illuminate/contracts": "^7.14.1|^8.0|^9.0",
