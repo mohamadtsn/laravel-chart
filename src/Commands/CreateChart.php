@@ -29,7 +29,7 @@ class CreateChart extends GeneratorCommand
      */
     protected function getStub()
     {
-        return __DIR__.'/stubs/chart.stub';
+        return __DIR__ . '/stubs/chart.stub';
     }
 
     /**
@@ -38,7 +38,7 @@ class CreateChart extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace)
     {
-        return $rootNamespace.'\Charts';
+        return $rootNamespace . '\Charts';
     }
 
     /**

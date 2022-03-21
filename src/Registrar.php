@@ -8,7 +8,6 @@ use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\Routing\Registrar as RouteRegistrar;
 use Illuminate\Support\Str;
-use Mohamadtsn\Charts\ChartsController;
 
 class Registrar
 {
